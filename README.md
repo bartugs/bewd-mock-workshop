@@ -112,7 +112,7 @@ Bekijk de volgende *opdracht7getCijferGeeftHetCorrecteCijferBijMeerdereStudenten
     ```java
         when(toets1.getToetsCijferVoorStudent(any())).thenReturn(3);
     ```
-1. Deze regel betekend kortgezegd: Als toets1.getToetsCijferVoorStudent wordt aangeroepen met maakt niet uit wat voor parameter, geef dan 0 terug.
+1. Deze regel betekend kortgezegd: Als toets1.getToetsCijferVoorStudent wordt aangeroepen met maakt niet uit wat voor parameter, geef dan 3 terug.
 1. Er zitten twee nieuwe methodes in deze aanroep (when() en any()) die je als imports moet toevoegen, vergelijkbaar als wat je eerder voor mock() hebt gedaan. De *any()* methode noemen we ook wel een *Matcher*. Daar ga je er nog meer van zien in deze workshop.
 1. Run de tests, helaas faalt deze nog steeds, maar als het goed is alleen op de tweede assertion voor student2.
 1. Verander de when regel zo dat deze niet meer werkt met alle objecten, maar alleen met aanroepen voor student1:
